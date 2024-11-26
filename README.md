@@ -96,3 +96,22 @@
     });
 
     form.addEventListener("submit", handleRoomSubmit);
+
+---
+
+## Adapter
+
+-   다른 서버에 있는 내역과 연동하고 싶을때 사용 ex) Mongo Adapter
+
+---
+
+## WebRTC (web Real-Time Communication)
+
+-   peer to peer 통신이 가능 (영상, 오디오, 텍스트)
+-   서버를 통하는게 아니라 브라우저 끼리 직접 전송
+-   서버를 통하긴 하지만 실제로 넘어가는 것은 사용자 인터넷 ip, 방화벽 정보, 브라우져 같은 정보만 넘기는 것.
+
+### video / audio part
+
+-   WebRTC 기술을 활용하여 사용자의 **마이크(오디오)**와 **카메라(비디오)**에 접근하는 기능을 구현 가능
+-   MediaDevices.getUserMedia() API를 사용하여 track 기능을 활용해 on/off 를 사용
