@@ -41,10 +41,15 @@ html(lang="en")
     header 
         h1 Noom
     main
-        div#myStream
-            video#myFase(autoplay playsinline width="40" height="40")
-            button#mute Mute
-            button#camera Turn Camera Off
-            select#cameras
+        div#welcome
+            form
+                input(placeholde="room name", required, type="text")
+                button Enter room
+        div#call
+            div#myStream
+                video#myFase(autoplay playsinline width="40" height="40")
+                button#mute Mute
+                button#camera Turn Camera Off
+                select#cameras
     script(src="/socket.io/socket.io.js")
     script(src="/public/js/app.js")
